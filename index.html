@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculatorContainer">
+        <div class="display">
+            <input id="result" readonly>
+        </div>
+        <div class="btnContainer">
+            <div class="numbersContainer">
+                <div class="numbers">
+                    <button onclick="appendToDisplay('1')" id="1">1</button>
+                    <button onclick="appendToDisplay('2')"  id="2">2</button>
+                    <button onclick="appendToDisplay('3')" id="3">3</button>
+                    <button onclick="appendToDisplay('4')" id="4">4</button>
+                    <button onclick="appendToDisplay('5')" id="5">5</button>
+                    <button onclick="appendToDisplay('6')" id="6">6</button>
+                    <button onclick="appendToDisplay('7')" id="7">7</button>
+                    <button onclick="appendToDisplay('8')" id="8">8</button>
+                    <button onclick="appendToDisplay('9')" id="9">9</button>
+                    <button onclick="appendToDisplay('0')" id="0">0</button>
+                </div>
+            </div>
+            <div class="operatorsContainer">
+                <div class="operators">
+                    <button onclick="appendToDisplay('+')" class="btn" id="plus">+</button>
+                    <button onclick="appendToDisplay('-')" class="btn" id="minus">-</button>
+                    <button onclick="appendToDisplay('*')" class="btn" id="multiply">×</button>
+                    <button onclick="appendToDisplay('/')" class="btn" id="division">÷</button>
+                    <button onclick="appendToDisplay('.')" class="btn" id="root">.</button>
+                    <button onclick="appendToDisplay(')')" class="btn" id="rightBraket"> ) </button>
+                    <button onclick="calculate()" class="btn" id="equal">=</button>
+                    <button onclick="appendToDisplay('(')" class="btn" id="leftBraket">(</button>
+                    <button onclick="clearDisplayOne('C')" class="btn" id="clear">C</button>
+                    <button onclick="clearDisplayAll()" class="btn" id="clearAll">CA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>Made by Shahdokht</footer>
+    <script src="./script.js"></script>
+</body>
+</html>

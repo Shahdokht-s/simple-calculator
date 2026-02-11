@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 690px;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculatorContainer{
+    width: 400px;
+    height: 500px;
+    background-color: plum;
+    margin-top: 40px;
+    border-radius: 20px;
+    border:5px solid purple;
+}
+
+.display{
+    background-color: bisque;
+    height: 20%;
+    margin: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#result{
+    font-size: 24px;
+    text-wrap: wrap;
+    padding: 0 20px;
+    width: 100%;
+    background-color: inherit;
+    border:none;
+}
+
+
+.btnContainer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-top: 40px ;
+}
+
+.numbersContainer{
+    width: 65%;
+}
+
+.numbers , .operators {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.numbers button{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(157, 72, 255);
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    transition: all 0.1s ease;
+}
+
+.numbers button:hover{
+    background-color:rgb(105, 10, 214) ;
+}
+
+.numbers button:active{
+    transform: scale(95%);
+}
+
+.operatorsContainer{
+    width: 30%;
+}
+
+
+.operators button{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 46, 164);
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    transition: all 0.1s ease;
+}
+
+.operators button:hover{
+    background-color: rgb(210, 20, 128);
+}
+
+.operators button:active{
+    transform: scale(95%);
+}
+
+footer{
+    font-size: 20px;
+    font-family:monospace;
+}
